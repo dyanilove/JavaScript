@@ -129,3 +129,88 @@ console.log(5!=='5');
 console.log(0!=='');
 console.log(true !== 1);
 console.log(true !== '1');
+
+console.log('---------------');
+
+/**
+ * 대소 관계 비교 연산자
+ */
+
+console.log(100>1);
+console.log(100<1);
+console.log(100<=1);
+console.log(100>=1);
+
+console.log('---------------');
+
+/**
+ * 삼항 조건 연산자(ternary operator)
+ */
+console.log(10>0?'10이 0보다 크다':'10이 0보다 작다');
+
+console.log('---------------');
+
+/**
+ * 논리 연산자
+ * 
+ * 1) &&(and)
+ * 2) ||(or)
+ */
+
+// &&조건은 모두 true여야 true를 반환
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+console.log('---------------');
+
+// ||는 하나면 true여도 true
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+
+console.log('---------------');
+
+/**
+ * 단축평가(short circuit evaluation)
+ * 
+ * &&를 사용했을때 좌측이 true이면 우측 값 반환
+ * &&를 사용했을때 좌측이 false이면 좌측 값 반환
+ * ||를 사용했을때 좌측이 true이면 좌측 값 반환
+ * ||를 사용했을때 좌측이 false이면 dn측 값 반환
+ */
+
+console.log(true || '황다은');
+console.log(false || '황다은');
+console.log(true && '황다은');
+console.log(false && '황다은');
+
+console.log(true && true && '황다은');
+console.log(true && false && '황다은');
+
+console.log('---------------');
+
+/**
+ * 지수 연산자
+ */
+console.log(2**2);
+console.log(10**3);
+
+/**
+ * null 연산자
+ */
+
+let name;
+console.log(name);
+
+name = name ?? '황다은팩토리';
+console.log(name);
+
+name = name ?? '팩토리황';
+console.log(name);
+
+let name2;
+name2 ??= '황다은';
+console.log(name2)
